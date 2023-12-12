@@ -100,9 +100,11 @@ export default function getItems() {
           <div key={item.id} className="border-2 bg-[#fafafa] mb-7 p-4">
             <div>
               <Image
-                src={ten}
+                src={item.cover_image}
                 alt="tutor-image"
                 className="flex-wrap md:w-[220px] w-full"
+                width={667}
+                height={1000}
               />
               <h6 className="flex justify-start text-[10px] font-bold mt-4 m-2">
                 {item.author}
