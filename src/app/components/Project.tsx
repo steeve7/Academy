@@ -4,15 +4,19 @@ import Image from 'next/image'
 import Vector from '../components/Assests/Vector.png'
 import icon from '../components/Assests/icon.png'
 import icon2 from '../components/Assests/icon (2).png'
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import SwiperCore, { Autoplay } from "swiper";
 
 export default function Project() {
   return (
-    <section className="flex justify-between px-20">
+    <section className="flex flex-col md:flex-row justify-between md:px-20 px-8 md:space-y-0 space-y-2">
       <div className="flex items-center gap-4">
         <Image
           src={icon}
           alt="icon image"
-          className="bg-[#fafafa] rounded-lg text-[15px]" />
+          className="bg-[#fafafa] rounded-lg text-[15px]"
+        />
         <p className="bg-[#fafafa] p-4 rounded-lg font-bold">Python</p>
         <p className="bg-[#fafafa] p-4 rounded-lg font-bold">React</p>
       </div>
@@ -29,7 +33,8 @@ export default function Project() {
         <Image
           src={icon2}
           alt="icon image"
-          className="bg-[#fafafa] rounded-lg text-[15px]" />
+          className="bg-[#fafafa] rounded-lg text-[15px]"
+        />
         <p className="bg-[#fafafa] p-4 rounded-lg font-bold">After Effect</p>
         <p className="bg-[#fafafa] p-4 rounded-lg font-bold">Lightroom</p>
         <p className="bg-[#fafafa] p-4 rounded-lg font-bold">Photography</p>

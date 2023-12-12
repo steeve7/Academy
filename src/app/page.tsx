@@ -1,5 +1,3 @@
-// import Image from 'next/image'
-//components
 import Navbar from './components/Navbar'
 import Project from './components/Project'
 import About from './components/About'

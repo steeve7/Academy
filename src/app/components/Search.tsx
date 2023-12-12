@@ -2,27 +2,30 @@ import React from 'react'
 
 export default function Search() {
   return (
-    <section className="w-full">
+    <section className="w-full md:px-0 px-8">
       <div className="flex justify-center">
-        <p className="font-bold text-[30px]">
-          Search Among <b className="text-blue-600">58340</b> Courses And <br />{" "}
+        <p className="font-bold md:text-[30px]">
+          Search Among <b className="text-blue-600 w-full">58340</b> Courses And
           <span className="flex justify-center">Find Your Favorite Course</span>
         </p>
       </div>
 
-      <div className="pt-2 relative mx-auto text-gray-600 flex justify-center items-center gap-5 mt-7">
+      <div className="pt-2 relative mx-auto text-gray-600 flex flex-col md:flex-row justify-center items-center gap-5 mt-7">
         <button
           type="submit"
-          className="bg-black p-2 text-white rounded-lg gap-3 absolute left-72 top-0 mt-4 ml-8"
+          className="bg-black p-2 text-white rounded-lg gap-3 absolute md:left-72 left-3 top-0 mt-4 md:ml-8 hidden lg:flex"
         >
           Categories
         </button>
         <input
-          className="border-2 border-gray-300 bg-[#fafafa] p-4 px-36  rounded-lg text-sm focus:outline-none"
+          className="border-2 w-full md:w-[35%] border-gray-300 bg-[#fafafa] p-4 md:px-36 rounded-lg text-sm focus:outline-none"
           type="search"
           placeholder="Search Anything"
         />
-        <button type="submit" className="absolute top-0 mt-7 mr-8 pl-48">
+        <button
+          type="submit"
+          className="absolute top-0 mt-7 md:mr-8 right-3 pl-48"
+        >
           <svg
             className="text-gray-600 h-4 w-4 fill-current"
             version="1.1"
