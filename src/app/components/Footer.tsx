@@ -1,6 +1,6 @@
 import React from "react";
 import Group from "../components/Assests/Group.png";
-import Cert from "../components/Assests/last (2).png";
+import Cert from "../components/Assests/last2.png";
 import Image from "next/image";
 
 export default function Footer() {

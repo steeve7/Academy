@@ -1,14 +1,14 @@
 import React from "react";
 import { FaSchool, FaUser, FaAngleRight } from "react-icons/fa";
 import { AiTwotoneTrophy } from "react-icons/ai";
-import one from "../components/Assests/instructor (1).png";
-import two from "../components/Assests/instructor (2).png";
-import three from "../components/Assests/instructor (3).png";
-import four from "../components/Assests/instructor (4).png";
-import ten from "../components/Assests/shade (4).png";
-import seven from "../components/Assests/shade (2).png";
-import eleven from "../components/Assests/shade (1).png";
-import six from "../components/Assests/shade (5).png";
+import one from "../components/Assests/instructor1.png";
+import two from "../components/Assests/instructor2.png";
+import three from "../components/Assests/instructor3.png";
+import four from "../components/Assests/instructor4.png";
+import ten from "../components/Assests/shade4.png";
+import seven from "../components/Assests/shade2.png";
+import eleven from "../components/Assests/shade1.png";
+import six from "../components/Assests/shade5.png";
 import Image from "next/image";
 
 export default function Courses() {

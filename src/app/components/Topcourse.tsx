@@ -12,8 +12,8 @@ import ten from '../components/Assests/18.png'
 import four from "../components/Assests/10.png";
 import scoreFour from '../components/Assests/Score2.png'
 import scoreOne from '../components/Assests/Score.png'
-import scoreTwo from '../components/Assests/Score (2).png'
-import scoreThree from '../components/Assests/Score (3).png'
+import scoreFive from '../components/Assests/Score5.png'
+import scoreThree from '../components/Assests/Score3.png'
 import nine from "../components/Assests/09.png";
 import twelve from "../components/Assests/12.png";
 import Image from 'next/image';
@@ -45,7 +45,7 @@ export default function Topcourse() {
       profession: "Student : 198",
       level: "Average",
       button: "Start Course",
-      rate: scoreTwo,
+      rate: scoreFive,
     },
     {
       image: twelve,

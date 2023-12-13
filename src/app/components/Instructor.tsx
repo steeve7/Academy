@@ -3,12 +3,12 @@ import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import Arrow from "../components/Assests/arrows.png";
 import instructor from "../components/Assests/advertising.png";
-import seven from "../components/Assests/shade (2).png";
-import ten from "../components/Assests/shade (4).png";
-import nine from "../components/Assests/shade (3).png";
-import six from "../components/Assests/shade (5).png";
-import eleven from "../components/Assests/shade (1).png";
-import two from "../components/Assests/shade (6).png";
+import seven from "../components/Assests/shade2.png";
+import ten from "../components/Assests/shade4.png";
+import nine from "../components/Assests/shade3.png";
+import six from "../components/Assests/shade5.png";
+import eleven from "../components/Assests/shade1.png";
+import two from "../components/Assests/shade6.png";
 
 export default function Instructor() {
   const images = [

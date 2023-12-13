@@ -17,8 +17,8 @@ const menus = [
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="flex justify-between py-10 px-20">
-      <h1 className="uppercase font-bold text-[20px] flex items-center gap-2">
+    <div className="flex justify-between py-10 md:px-20 px-7">
+      <h1 className="uppercase font-bold text-[20px] flex items-center justify-start gap-2">
         <Image src={Group} alt="icon image" />
         Academy
       </h1>
