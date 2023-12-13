@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Search() {
   return (
@@ -10,13 +10,7 @@ export default function Search() {
         </p>
       </div>
 
-      <div className="pt-2 relative mx-auto text-gray-600 flex flex-col md:flex-row justify-center items-center gap-5 mt-7">
-        <button
-          type="submit"
-          className="bg-black p-2 text-white rounded-lg gap-3 absolute md:left-72 left-3 top-0 mt-4 md:ml-8 hidden lg:flex"
-        >
-          Categories
-        </button>
+      <form className="pt-2 relative mx-auto text-gray-600 flex flex-col md:flex-row justify-center items-center gap-5 mt-7">
         <input
           className="border-2 w-full md:w-[35%] border-gray-300 bg-[#fafafa] p-4 md:px-36 rounded-lg text-sm focus:outline-none"
           type="search"
@@ -24,7 +18,13 @@ export default function Search() {
         />
         <button
           type="submit"
-          className="absolute top-0 mt-7 md:mr-8 right-3 pl-48"
+          className="bg-black p-2 text-white rounded-lg gap-3 md:absolute md:left-72 w-full md:w-[8%] top-0 md:mt-4 md:ml-8"
+        >
+          Categories
+        </button>
+        <button
+          type="submit"
+          className="absolute top-0 mt-7 md:mr-8 right-[35rem] pl-48 lg:flex hidden"
         >
           <svg
             className="text-gray-600 h-4 w-4 fill-current"
@@ -38,7 +38,7 @@ export default function Search() {
           </svg>
         </button>
         <p>Or View The Following Courses</p>
-      </div>
+      </form>
     </section>
   );
 }

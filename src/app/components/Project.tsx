@@ -1,12 +1,9 @@
-import React from 'react'
+import React from "react";
 import { FaAngleRight } from "react-icons/fa";
-import Image from 'next/image'
-import Vector from '../components/Assests/Vector.png'
-import icon from '../components/Assests/icon.png'
-import icon2 from '../components/Assests/icon (2).png'
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import SwiperCore, { Autoplay } from "swiper";
+import Image from "next/image";
+import Vector from "../components/Assests/Vector.png";
+import icon from "../components/Assests/icon.png";
+import icon2 from "../components/Assests/icon (2).png";
 
 export default function Project() {
   return (

@@ -1,33 +1,30 @@
 "use client";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchUsers } from "../../../slices/userSlice";
+import { fetchBooks } from "../../../slices/userSlice";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {FaFilter,} from "react-icons/fa";
+import { FaFilter } from "react-icons/fa";
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
-import ten from "../components/Assests/10.png";
 import { AppDispatch, RootState } from "../../../store/store";
 
 //fetch data
 export default function getItems() {
-
   const userRef = useRef(false);
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const {entities} = useSelector((state:RootState) => state.user)
+  const { entities } = useSelector((state: RootState) => state.book);
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    if(userRef.current === false){
-      dispatch(fetchUsers())
+    if (userRef.current === false) {
+      dispatch(fetchBooks());
     }
 
     return () => {
       userRef.current = true;
-    }
-    
-  },[])
+    };
+  }, []);
 
   const menus = [
     { id: "#design", label: "Design" },
@@ -38,7 +35,7 @@ export default function getItems() {
 
   return (
     <section>
-      <div className="flex justify-between items-center md:px-20 px-10 mt-24">
+      <div className="flex justify-between items-center md:px-20 px-10 mt-24 w-full">
         <div>
           <p className="font-bold md:text-[20px] text-[15px] uppercase">
             New Courses (BOOKS)
@@ -95,16 +92,16 @@ export default function getItems() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap flex-col md:flex-row justify-around my-[15px] mx-0 md:px-0 px-7">
+      <div className="flex flex-wrap flex-col md:flex-row justify-around my-[15px] px-5">
         {entities.map((item: any) => (
           <div key={item.id} className="border-2 bg-[#fafafa] mb-7 p-4">
             <div>
               <Image
                 src={item.cover_image}
                 alt="tutor-image"
-                className="flex-wrap md:w-[220px] w-full"
+                className="flex-wrap md:w-[200px] w-full"
                 width={667}
-                height={1000}
+                height={100}
               />
               <h6 className="flex justify-start text-[10px] font-bold mt-4 m-2">
                 {item.author}

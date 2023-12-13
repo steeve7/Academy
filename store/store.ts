@@ -5,7 +5,7 @@ import useReducer from "../slices/userSlice";
 export function makeStore(){
     return configureStore({
         reducer: {
-            user:useReducer
+            book:useReducer
         }
     })
 }

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import Group from "../components/Assests/Group.png";
-import Cert from "../components/Assests/last (2).png"
-import last from "../components/Assests/last (1).png"
+import Cert from "../components/Assests/last (2).png";
 import Image from "next/image";
 
 export default function Footer() {
@@ -110,7 +109,9 @@ export default function Footer() {
         <p className="font-bold text-[10px]">
           privacy policy | terms & conditions
         </p>
-        <p className="font-bold text-[10px] md:mt-0 mt-4">all copyright (c) 2022 reserved</p>
+        <p className="font-bold text-[10px] md:mt-0 mt-4">
+          all copyright (c) 2022 reserved
+        </p>
       </div>
     </section>
   );

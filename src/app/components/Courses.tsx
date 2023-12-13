@@ -1,75 +1,71 @@
-import React from 'react'
-import {FaSchool,
-  FaUser,
-  FaAngleRight,} from 'react-icons/fa'
-  import { AiTwotoneTrophy } from "react-icons/ai";
-import one from '../components/Assests/instructor (1).png'
-import two from '../components/Assests/instructor (2).png'
-import three from '../components/Assests/instructor (3).png'
-import four from '../components/Assests/instructor (4).png'
-import ten from '../components/Assests/shade (4).png'
+import React from "react";
+import { FaSchool, FaUser, FaAngleRight } from "react-icons/fa";
+import { AiTwotoneTrophy } from "react-icons/ai";
+import one from "../components/Assests/instructor (1).png";
+import two from "../components/Assests/instructor (2).png";
+import three from "../components/Assests/instructor (3).png";
+import four from "../components/Assests/instructor (4).png";
+import ten from "../components/Assests/shade (4).png";
 import seven from "../components/Assests/shade (2).png";
 import eleven from "../components/Assests/shade (1).png";
 import six from "../components/Assests/shade (5).png";
-import Image from 'next/image'
-
+import Image from "next/image";
 
 export default function Courses() {
-
-     const items = [
-       {
-         image: two,
-         role: "Google Ads Training 2021: Profit with Pay",
-         lesson: "Lesson : 6",
-         profession: "Student : 198",
-         level: "Average",
-         button: "Let's Go",
-         points: "Points : 75/10",
-         days: "Day 56",
-         imageTwo: ten,
-         autor: "Jon Kantner",
-         title: "CEO",
-       },
-       {
-         image: three,
-         role: "ASO & Mobile App Marketing: Monetize Your App",
-         lesson: "Lesson : 6",
-         profession: "Student : 198",
-         level: "Advanced",
-         button: "Let's Go",
-         points: "Points : 25/100",
-         days: "Day 56",
-         imageTwo: seven,
-         autor: "Jon Kantner",
-         title: "Designer",
-       },
-       {
-         image: four,
-         role: "Python for Beginners - Learn Programming from scratch",
-         lesson: "Lesson : 6",
-         profession: "Student : 198",
-         level: "Beginner",
-         button: "Let's Go",
-         points: "Points : 50/100",
-         days: "Day 56",
-         imageTwo: eleven,
-         autor: "Jon Kantner",
-         title: "Designer Teacher",
-       },
-       {
-         image: one,
-         role: "Beginner Nikon Digital SLR  Photography",
-         lesson: "Lesson : 6",
-         profession: "Student : 198",
-         level: "Beginner",
-         button: "Let's Go",
-         points: "Points : 100/100",
-         days: "Day 56",
-         imageTwo: six,
-         autor: "Jon Kantner",
-         title: "Photographer",
-       },
-     ];
+  const items = [
+    {
+      image: two,
+      role: "Google Ads Training 2021: Profit with Pay",
+      lesson: "Lesson : 6",
+      profession: "Student : 198",
+      level: "Average",
+      button: "Let's Go",
+      points: "Points : 75/10",
+      days: "Day 56",
+      imageTwo: ten,
+      autor: "Jon Kantner",
+      title: "CEO",
+    },
+    {
+      image: three,
+      role: "ASO & Mobile App Marketing: Monetize Your App",
+      lesson: "Lesson : 6",
+      profession: "Student : 198",
+      level: "Advanced",
+      button: "Let's Go",
+      points: "Points : 25/100",
+      days: "Day 56",
+      imageTwo: seven,
+      autor: "Jon Kantner",
+      title: "Designer",
+    },
+    {
+      image: four,
+      role: "Python for Beginners - Learn Programming from scratch",
+      lesson: "Lesson : 6",
+      profession: "Student : 198",
+      level: "Beginner",
+      button: "Let's Go",
+      points: "Points : 50/100",
+      days: "Day 56",
+      imageTwo: eleven,
+      autor: "Jon Kantner",
+      title: "Designer Teacher",
+    },
+    {
+      image: one,
+      role: "Beginner Nikon Digital SLR  Photography",
+      lesson: "Lesson : 6",
+      profession: "Student : 198",
+      level: "Beginner",
+      button: "Let's Go",
+      points: "Points : 100/100",
+      days: "Day 56",
+      imageTwo: six,
+      autor: "Jon Kantner",
+      title: "Photographer",
+    },
+  ];
   return (
     <section className="md:px-20 mt-20 px-5">
       <div className="flex justify-between items-center m-2 w-full">
@@ -82,9 +78,13 @@ export default function Courses() {
             className="mb-6 border-2 bg-[#fafafa] p-2 rounded-lg flex flex-col md:flex-row items-center justify-around md:w-[48%] w-full"
             key={i}
           >
-            <Image src={item.image} alt="courses_image" className="md:w-[200px] w-full" />
+            <Image
+              src={item.image}
+              alt="courses_image"
+              className="md:w-[200px] w-full"
+            />
             <div className="space-y-5 md:w-[60%] w-full">
-              <h2 className="text-[10px] font-bold">{item.role}</h2>
+              <h2 className="text-[10px] font-bold mt-4 md:mt-0">{item.role}</h2>
               <div className="flex items-center justify-between">
                 <p className="text-[10px] flex items-center gap-2">
                   <FaSchool />

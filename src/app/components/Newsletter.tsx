@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image';
-import background from '../components/Assests/background.png'
+import React from "react";
+import Image from "next/image";
+import background from "../components/Assests/background.png";
 
 export default function Newsletter() {
   return (
@@ -19,7 +19,7 @@ export default function Newsletter() {
       <div className="pt-2 relative mx-auto text-gray-600 flex justify-center items-center gap-5 mt-7 z-10 w-full">
         <button
           type="submit"
-          className="bg-black p-2 text-white rounded-lg gap-3 absolute right-2 top-0 mt-4 mx-auto"
+          className="bg-black p-2 text-white rounded-lg gap-3 absolute md:right-40 right-2 top-0 mt-4 mx-auto"
         >
           Submit
         </button>
